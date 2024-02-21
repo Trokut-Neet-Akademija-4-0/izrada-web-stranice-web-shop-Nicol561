@@ -16,12 +16,12 @@
             <div class="product-details_1">
                 <div class="gallery">
                     <div class="main-image">
-                        <img src="images/picture_products/72483-320x320.jpg" alt="Proizvod 1">
+                        <img src="images/picture_products/72483-320x320.jpg" alt="Proizvod 1" id="mainImage">
                     </div>
                     <div class="thumbnails">
-                        <img src="images/picture_products/winsor.jpg" alt="Proizvod 1">
-                        <img src="images/picture_products/winsor3.jpg" alt="Proizvod 1">
-                        <img src="images/picture_products/winsor4.jpg" alt="Proizvod 1">
+                        <img src="images/picture_products/72483-320x320.jpg" alt="Proizvod 1" class="thumbnail">
+                        <img src="images/picture_products/winsor3.jpg" alt="Proizvod 1" class="thumbnail">
+                        <img src="images/picture_products/winsor4.jpg" alt="Proizvod 1" class="thumbnail">
                         
                     </div>
                 </div>
@@ -63,5 +63,23 @@
         <iframe src="partials/footer.html" width="100%" class=".auto-height-iframe"></iframe>
     </footer>
     <script src="js/javascript.js"></script>
+
+    <script>
+      
+    const mainImage = document.getElementById('mainImage');
+
+    const thumbnails = document.querySelectorAll('.thumbnails .thumbnail');
+
+
+    thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', function() {
+        
+        mainImage.src = this.src;
+        
+        mainImage.alt = this.alt;
+    });
+});
+ 
+    </script>
 </body>
 </html>

@@ -17,6 +17,7 @@ footer {
 
     .container{
         display: flex;
+        
         width: 100%;
         justify-content: space-around;
         align-items: center;
@@ -46,7 +47,7 @@ footer {
     }
       
     a:hover{
-        color: rgb(88, 88, 154);
+        color: #FEE715;
     
     }
     a:active{
@@ -58,6 +59,7 @@ footer {
         color:#242121 ;
     }
     h4{
+       
         padding-bottom: 5px;
         font-size: 20px;
         color:#FEE715 ;
@@ -66,4 +68,13 @@ footer {
         color: #FEE715;
         display: flex;
         justify-content: center;
+        
     }
+    li{
+        padding: 1px;
+    }
+   
+
+
+   
+   
